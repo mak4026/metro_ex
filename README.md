@@ -1,5 +1,5 @@
 # 概要
-東京メトロオープンデータ(https://developer.tokyometroapp.jp/)からデータをとってきて, Google Map上にオーバーレイしていろいろ表示する.
+東京メトロオープンデータ(https://developer.tokyometroapp.jp/ )からデータをとってきて, Google Map上にオーバーレイしていろいろ表示する.
 
 - 電車のリアルタイムな位置
 - 電車の次の駅の停車予定時刻
