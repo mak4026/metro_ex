@@ -1,0 +1,54 @@
+<!DOCTYPE html> <html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Sample</title>
+  <script src="https://maps.google.com/maps/api/js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+  <script src="js/sample.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      loadRailwayList();
+      initMap();
+      loadStation();
+      loadRailway();
+      setTimeout(loadTimetable(), 4000);
+
+      $(function() { setInterval(function() {
+        loadTrains(); }, 10000);
+      });
+    });
+  </script>
+  <style>
+    #map {
+      width : 100%;
+      height : 720px;
+    }
+    #info-box {
+      background-color: white;
+      border: 1px solid black;
+      bottom: 190px;
+      height: 50px;
+      width: 100px;
+      padding: 10px;
+      position: absolute;
+      left: 30px;
+    }
+    #train-box {
+      background-color: white;
+      border: 1px solid black;
+      bottom: 10px;
+      height: 150px;
+      width: 200px;
+      padding: 10px;
+      position: absolute;
+      left: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map" class="map"> </div>
+  <div id="train-box"></div>
+  <div id="info-box">?</div>
+
+</body>
+</html>
